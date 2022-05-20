@@ -4,6 +4,7 @@ import Router from './router';
 import Components from './components/index';
 
 import '@mdi/font/css/materialdesignicons.css';
+import './styles/index.sass';
 
 const app = createApp(App);
 Components(app);
