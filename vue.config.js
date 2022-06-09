@@ -6,6 +6,7 @@ module.exports = {
       preProcessor: 'sass',
       patterns: [
         path.resolve(__dirname, './src/styles/variables.sass'),
+        path.resolve(__dirname, './src/styles/mixins.sass'),
       ]
     }
   }
