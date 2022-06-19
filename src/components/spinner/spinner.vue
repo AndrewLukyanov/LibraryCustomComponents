@@ -33,10 +33,10 @@ export default {
       return {
         [`spinner--${this.color}`]: this.color,
         [`spinner--${this.size}`]: this.size
-      }
+      };
     }
   }
-}
+};
 </script>
 
 <style lang="sass" src="./spinner.sass" />

@@ -29,7 +29,7 @@ export default {
 
   computed: {
     coloring() {
-      return `ui-glyph--${this.color}`
+      return `ui-glyph--${this.color}`;
     },
 
     icon() {
@@ -41,10 +41,10 @@ export default {
         [`height: ${this.size}px;`]: this.size,
         [`width: ${this.size}px;`]: this.size,
         [`font-size: ${this.size}px;`]: this.size
-      }
+      };
     }
   }
-}
+};
 </script>
 
 <style lang="sass" src="./glyph.sass" />
