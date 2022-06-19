@@ -2,7 +2,8 @@
   <div class="main"
     :class="currentTheme">
     <div class="main__heading">
-      <a href="/" class="logo">
+      <a href="/"
+        class="logo">
         <img src="./icons/logo.svg"> LCC
       </a>
     </div>
@@ -22,7 +23,7 @@ export default {
     return {
       theme: localStorage.getItem('Theme') || 'light',
       isChecked: false,
-    }
+    };
   },
 
   computed: {
@@ -43,7 +44,7 @@ export default {
       localStorage.setItem('Theme', this.theme);
     }
   }
-}
+};
 </script>
 
 <style lang="sass">

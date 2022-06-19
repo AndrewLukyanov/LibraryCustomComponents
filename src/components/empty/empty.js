@@ -34,16 +34,16 @@ export default {
 
     const img = image
       ? h('img', {
-          height: imageSize,
-          width: imageSize,
-          src: image,
-        })
+        height: imageSize,
+        width: imageSize,
+        src: image,
+      })
       : null;
 
     return () => {
       return h('div', {
         class: 'empty'
       }, img, text, slot);
-    }
+    };
   }
-}
+};

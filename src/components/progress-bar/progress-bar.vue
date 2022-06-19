@@ -25,7 +25,7 @@ export default {
     width() {
       return {
         width: `${this.percentage}%`
-      }
+      };
     }
   }
 };
