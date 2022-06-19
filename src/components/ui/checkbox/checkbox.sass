@@ -1,0 +1,40 @@
+.ui-checkbox
+  position: relative
+  user-select: none
+
+  input[type="checkbox"]
+    display: none
+
+    &:checked + label
+      background-color: $color-accent
+
+      &::before
+        left: 27px
+
+  &__label
+    display: inline-flex
+    height: 20px
+    width: 45px
+    position: relative
+    background-color: $color-primary
+    border-radius: 10px
+    cursor: pointer
+
+    &::before
+      content: ''
+      position: absolute
+      top: 2px
+      left: 2px
+      background-color: #fff
+      transition: 0.3s
+      border-radius: 50%
+      @include square(16px)
+
+  &__text
+    position: absolute
+    top: 50%
+    left: 100%
+    padding-left: 4px
+    color: inherit
+    white-space: pre
+    transform: translateY(-50%)
