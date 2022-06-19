@@ -7,11 +7,11 @@
         <img src="./icons/logo.svg"> LCC
       </a>
     </div>
-    <input id="switch"
-      type="checkbox" 
-      :checked="isChecked"
-      @click="toggle">
-    <label for="switch">Switch</label>
+
+    <ui-checkbox :checked="isChecked" 
+      @change="toggle">
+      Theme switch
+    </ui-checkbox>
   </div>
 </template>
 
@@ -57,8 +57,10 @@ export default {
     width: 30px
 
   &--light
+    color: #000
     background-color: #fff
 
   &--dark
+    color: #fff
     background-color: #000
 </style>
