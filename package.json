@@ -21,7 +21,7 @@
     "prosemirror-state": "^1.4.1",
     "prosemirror-view": "^1.26.2",
     "vue": "^3.0.0",
-    "vue-router": "^4.0.15",
+    "vue-router": "^4.0.16",
     "vue3-smooth-dnd": "^0.0.2"
   },
   "devDependencies": {

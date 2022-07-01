@@ -2,12 +2,12 @@ import { h } from 'vue';
 import './empty.sass';
 
 export default {
-  name: 'empty',
+  name: 'ui-empty',
 
   props: {
     image: {
       type: String,
-      default: require('../../icons/empty-box.svg')
+      default: require('../../../icons/empty-box.svg')
     },
 
     imageSize: {
@@ -42,7 +42,7 @@ export default {
 
     return () => {
       return h('div', {
-        class: 'empty'
+        class: 'ui-empty'
       }, img, text, slot);
     };
   }

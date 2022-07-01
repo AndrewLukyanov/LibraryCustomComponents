@@ -29,7 +29,7 @@ export default {
 
   data() {
     return {
-      id: 'checkbox_' + Math.random().toString(36).substring(2, 15)
+      id: 'ui-checkbox_' + Math.random().toString(36).substring(2, 15)
     };
   },
 };

@@ -1,9 +1,9 @@
 <template>
-  <div class="progress-bar">
+  <div class="ui-progress-bar">
     <div v-if="percentage"
       :style="width"
-      class="progress-bar__inner">
-      <div class="progress-bar__text">
+      class="ui-progress-bar__inner">
+      <div class="ui-progress-bar__text">
         {{ `${percentage}%` }}
       </div>
     </div>
@@ -12,7 +12,7 @@
 
 <script>
 export default {
-  name: 'progress-bar',
+  name: 'ui-progress-bar',
 
   props: {
     percentage: {
