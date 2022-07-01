@@ -93,7 +93,7 @@ export default {
       const draggable = (item, index) => h(Draggable, {
         class: `${draggableItemClass}`,
         tag: draggableTag,
-      }, [context.slots.default(item, index)]);
+      }, () => [context.slots.default(item, index)]);
 
       return items.length 
         ? h(Container, args, items.map((item, index) => draggable(item, index)))

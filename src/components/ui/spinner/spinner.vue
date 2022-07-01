@@ -1,5 +1,5 @@
 <template>
-  <div class="spinner"
+  <div class="ui-spinner"
     :class="classes">
     <svg viewBox="0 0 50 50">
       <circle cx="25"
@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: 'spinner',
+  name: 'ui-spinner',
 
   props: {
     color: {
@@ -31,8 +31,8 @@ export default {
   computed: {
     classes() {
       return {
-        [`spinner--${this.color}`]: this.color,
-        [`spinner--${this.size}`]: this.size
+        [`ui-spinner--${this.color}`]: this.color,
+        [`ui-spinner--${this.size}`]: this.size
       };
     }
   }
