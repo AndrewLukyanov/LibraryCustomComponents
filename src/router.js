@@ -3,14 +3,15 @@ import {
   createRouter
 } from 'vue-router';
 
-import Home from './pages/home.vue';
-import Button from './pages/button.vue';
-import Checkbox from './pages/checkbox.vue';
-import Dnd from './pages/dnd.vue';
-import Empty from './pages/empty.vue';
-import ProgressBar from './pages/progress-bar.vue';
-import Rte from './pages/rte.vue';
-import Spinner from './pages/spinner.vue'; 
+import Home from './Home.vue';
+import Button from './components/ui/button/example.vue';
+import Checkbox from './components/ui/checkbox/example.vue';
+import Dnd from './components/ui/dnd/example.vue';
+import Empty from './components/ui/empty/example.vue';
+import Glyph from './components/ui/glyph/example.vue';
+import ProgressBar from './components/ui/progress-bar/example.vue';
+import Rte from './components/ui/rte/example.vue';
+import Spinner from './components/ui/spinner/example.vue'; 
 
 const router = createRouter({
   history: createWebHashHistory(),
@@ -39,6 +40,11 @@ const router = createRouter({
       path: '/empty',
       name: 'empty',
       component: Empty,
+    },
+    {
+      path: '/glyph',
+      name: 'glyph',
+      component: Glyph,
     },
     {
       path: '/progress-bar',

@@ -4,9 +4,6 @@
 
 <script>
 export default {
-  name: 'progress-bar'
+  name: 'example'
 };
 </script>
-
-<style lang="sass">
-</style>

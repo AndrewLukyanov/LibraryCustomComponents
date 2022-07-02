@@ -25,6 +25,10 @@ export const Components = [
     to: '/empty'
   },
   {
+    name: 'Glyph',
+    to: '/glyph'
+  },
+  {
     name: 'Progress bar',
     to: '/progress-bar'
   },
