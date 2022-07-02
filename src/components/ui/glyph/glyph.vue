@@ -2,7 +2,7 @@
   <div class="ui-glyph"
     :class="coloring">
     <i :class="icon" 
-      :styles="styles" />
+      :style="styles" />
   </div>
 </template>
 
@@ -37,11 +37,7 @@ export default {
     },
 
     styles() {
-      return {
-        [`height: ${this.size}px;`]: this.size,
-        [`width: ${this.size}px;`]: this.size,
-        [`font-size: ${this.size}px;`]: this.size
-      };
+      return `height: ${this.size}px; width: ${this.size}px; font-size: ${this.size}px;`;
     }
   }
 };

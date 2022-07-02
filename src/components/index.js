@@ -1,3 +1,4 @@
+import UiButton from './ui/button/button';
 import UiCheckbox from './ui/checkbox/checkbox.vue';
 import UiDnd from './ui/dnd/dnd';
 import UiEmpty from './ui/empty/empty';
@@ -7,6 +8,10 @@ import UiRte from './ui/rte/rte';
 import UiSpinner from './ui/spinner/spinner.vue';
 
 export const Components = [
+  {
+    name: 'Button',
+    to: '/button'
+  },
   {
     name: 'Checkbox',
     to: '/checkbox'
@@ -34,6 +39,7 @@ export const Components = [
 ];
 
 export default function(app) {
+  app.component('ui-button', UiButton);
   app.component('ui-checkbox', UiCheckbox);
   app.component('ui-dnd', UiDnd);
   app.component('ui-empty', UiEmpty);

@@ -1,0 +1,69 @@
+.ui-button
+  display: flex
+  align-items: center
+  justify-content: center
+  border: 0
+  padding: 0
+  cursor: pointer
+  color: inherit
+  border-radius: 4px
+  transition: all .3s
+  background-color: transparent
+
+  &--rounded
+    border-radius: 50%
+
+  &--disabled
+    cursor: default
+    color: #fff
+    background-color: darken(#fff, 10%)
+
+  &--auto
+    height: auto
+    width: auto
+
+  &--sm,
+  &--md,
+  &--lg
+    height: 30px
+
+  &--sm
+    width: 30px
+
+  &--md
+    width: 80px
+
+  &--lg
+    width: 100px
+
+  &--accent,
+  &--error
+    color: #fff
+
+  &--success,
+  &--warning
+    color: $color-primary
+
+  &--accent
+    background-color: $color-accent
+
+    &:hover
+      background-color: lighten($color-accent, 5%)
+
+  &--success
+    background-color: $color-success
+
+    &:hover
+      background-color: lighten($color-success, 5%)
+
+  &--warning
+    background-color: $color-warning
+
+    &:hover
+      background-color: lighten($color-warning, 5%)
+
+  &--error
+    background-color: $color-error
+
+    &:hover
+      background-color: lighten($color-error, 5%)

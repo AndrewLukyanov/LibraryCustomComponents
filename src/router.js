@@ -4,6 +4,7 @@ import {
 } from 'vue-router';
 
 import Home from './pages/home.vue';
+import Button from './pages/button.vue';
 import Checkbox from './pages/checkbox.vue';
 import Dnd from './pages/dnd.vue';
 import Empty from './pages/empty.vue';
@@ -18,6 +19,11 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: Home,
+    },
+    {
+      path: '/button',
+      name: 'button',
+      component: Button,
     },
     {
       path: '/checkbox',
