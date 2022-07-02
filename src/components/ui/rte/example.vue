@@ -4,6 +4,6 @@
 
 <script>
 export default {
-  name: 'rte'
+  name: 'example'
 };
 </script>

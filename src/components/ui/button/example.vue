@@ -36,6 +36,6 @@
 
 <script>
 export default {
-  name: 'page-button'
+  name: 'example'
 };
 </script>
