@@ -5,6 +5,7 @@
         :key="index" 
         class="py-2">
         <router-link :to="component.to"
+          class="sidebar__link" 
           v-text="component.name" />
       </li>
     </ul>
@@ -30,4 +31,7 @@ export default {
   flex: 0 0 320px
   width: 300px
   border-right: 1px solid $color-primary
+
+  &__link:hover
+    color: $color-accent
 </style>
