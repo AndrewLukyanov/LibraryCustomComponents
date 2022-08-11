@@ -11,7 +11,8 @@ import Empty from './components/ui/empty/example.vue';
 import Glyph from './components/ui/glyph/example.vue';
 import ProgressBar from './components/ui/progress-bar/example.vue';
 import Rte from './components/ui/rte/example.vue';
-import Spinner from './components/ui/spinner/example.vue'; 
+import Spinner from './components/ui/spinner/example.vue';
+import User from './components/user/example.vue';  
 
 const router = createRouter({
   history: createWebHashHistory(),
@@ -61,6 +62,11 @@ const router = createRouter({
       name: 'spinner',
       component: Spinner,
     },
+    {
+      path: '/user',
+      name: 'user',
+      component: User,
+    }
   ],
 });
 
