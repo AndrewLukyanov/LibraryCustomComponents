@@ -1,17 +1,15 @@
 <template>
-  <ui-glyph />
+  <button-group>
+    <ui-glyph />
 
-  <br>
+    <ui-glyph name="account"
+      size="24"
+      color="primary" />
 
-  <ui-glyph name="account"
-    size="24"
-    color="primary" />
-
-  <br>
-
-  <ui-glyph name="heart"
-    size="34" 
-    color="accent" />
+    <ui-glyph name="heart"
+      size="34" 
+      color="accent" />
+  </button-group>
 </template>
 
 <script>
