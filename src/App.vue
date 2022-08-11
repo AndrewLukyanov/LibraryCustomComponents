@@ -1,5 +1,8 @@
 <template>
-  <div class="main h-100"
+  <ui-spinner v-if="user == null"
+    size="lg" />
+  <div v-else
+    class="main h-100"
     :class="currentTheme">
     <div class="main__heading d-flex flex-wrap justify-content-between align-items-center">
       <a href="/"
@@ -7,8 +10,11 @@
         <img src="./icons/logo.svg"> LCC
       </a>
 
-      <ui-checkbox :checked="isChecked" 
-        @change="toggle" />
+      <button-group>
+        <user :value="user" />
+        <ui-checkbox :checked="isChecked" 
+          @change="toggle" />
+      </button-group>
     </div>
 
     <div class="main__content d-flex h-100">
@@ -22,6 +28,10 @@
 </template>
 
 <script>
+import { 
+  mapState
+} from 'pinia';
+import { userStore } from './store/user';
 import Sidebar from './Sidebar.vue';
 
 export default {
@@ -39,6 +49,10 @@ export default {
   },
 
   computed: {
+    ...mapState(userStore, {
+      user: 'user'
+    }),
+
     currentTheme() {
       return `main--${this.theme}`;
     }
