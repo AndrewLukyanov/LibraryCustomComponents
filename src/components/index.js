@@ -1,3 +1,4 @@
+import ButtonGroup from './button-group/button-group';
 import UiButton from './ui/button/button';
 import UiCheckbox from './ui/checkbox/checkbox.vue';
 import UiDnd from './ui/dnd/dnd';
@@ -39,10 +40,11 @@ export const Components = [
   {
     name: 'Spinner',
     to: '/spinner'
-  },
+  }
 ];
 
 export default function(app) {
+  app.component('button-group', ButtonGroup);
   app.component('ui-button', UiButton);
   app.component('ui-checkbox', UiCheckbox);
   app.component('ui-dnd', UiDnd);
