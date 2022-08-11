@@ -7,6 +7,7 @@ import UiGlyph from './ui/glyph/glyph.vue';
 import UiProgressBar from './ui/progress-bar/progress-bar.vue';
 import UiRte from './ui/rte/rte';
 import UiSpinner from './ui/spinner/spinner.vue';
+import User from './user/user.vue';
 
 export const Components = [
   {
@@ -40,6 +41,10 @@ export const Components = [
   {
     name: 'Spinner',
     to: '/spinner'
+  },
+  {
+    name: 'User',
+    to: '/user'
   }
 ];
 
@@ -53,4 +58,5 @@ export default function(app) {
   app.component('ui-progress-bar', UiProgressBar);
   app.component('ui-rte', UiRte);
   app.component('ui-spinner', UiSpinner);
+  app.component('user', User);
 }
